@@ -12,7 +12,7 @@ sock.connect((IP, PORT))
 print("Fuzzing the server...")
 while True:
     print("\nIteration: ", count)
-    sock.send("INC ".encode() + ("1" * count).encode()) + "\r\n"
+    sock.send("INC ".encode() + ("1" * count).encode()) + "\r\n".encode()
     response = sock.recv(1024)
     print(response)
     count += 1
