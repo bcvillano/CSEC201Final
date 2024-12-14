@@ -6,7 +6,7 @@ def main():
     IP = "192.168.192.167"
     PORT = 2223
 
-    garbage = "1" * 1000
+    garbage = "1" * 20
     name = "BRAE"
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((IP, PORT))
